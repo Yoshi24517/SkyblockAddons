@@ -197,7 +197,7 @@ public class Utils {
 
             if (matcher.find()) {
                 // Group 1 is the server brand.
-                return matcher.group(1).startsWith(HYPIXEL_SERVER_BRAND);
+                return matcher.group(1).startsWith("Hypixel BungeeCord (") ? true : matcher.group(1).equals(HYPIXEL_SERVER_BRAND);
             }
             else {
                 return false;
