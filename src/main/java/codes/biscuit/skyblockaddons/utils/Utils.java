@@ -850,7 +850,7 @@ public class Utils {
         new Thread(() -> {
             try {
                 boolean isCurrentBeta = SkyblockAddons.VERSION.contains("b");
-                URL url = new URL("https://raw.githubusercontent.com/BiscuitDevelopment/SkyblockAddons/"+(isCurrentBeta ? "development" : "master")+"/src/main/resources/data.json");
+                URL url = new URL("https://raw.githubusercontent.com/Yoshi24517/SkyblockAddons/"+(isCurrentBeta ? "development" : "master")+"/src/main/resources/data.json");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
                 connection.setRequestProperty("User-Agent", Utils.USER_AGENT);
